@@ -7,7 +7,7 @@ router.post('/login', function(req, res) {
 
     // DB
 
-    //var responseJson = {success: true, message: 'Login Failed', user: null };
+    
     userLib.isUserValid(req.body,function(resultJson){
     res.json(resultJson);
 })
